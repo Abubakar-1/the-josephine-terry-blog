@@ -5,12 +5,11 @@ import { Icons } from "@/components/icons";
 import { AuthProvider } from "@/contexts/AuthContext";
 
 export default function AdminLayout({ children }: { children: ReactNode }) {
-  const [isOpen, setIsOpen] = useState(false); // Sidebar state for mobile
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <AuthProvider>
       <div className="flex h-screen bg-gray-100">
-        {/* Sidebar - Mobile & Desktop */}
         <aside
           className={`fixed inset-y-0 left-0 z-50 w-64 bg-white shadow-md transform transition-transform duration-300 ease-in-out 
           ${isOpen ? "translate-x-0" : "-translate-x-full"} 
@@ -21,7 +20,6 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
               <Icons.logo className="h-6 w-6" />
               <span className="text-xl font-bold">Admin Panel</span>
             </Link>
-            {/* Close Button for Mobile */}
             <button
               className="md:hidden p-2 text-gray-600"
               onClick={() => setIsOpen(false)}
@@ -49,9 +47,7 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
           </nav>
         </aside>
 
-        {/* Main Content Area */}
         <div className="flex-1 flex flex-col">
-          {/* Mobile Navbar with Toggle Button */}
           <header className="md:hidden bg-white shadow p-4 flex justify-between items-center">
             <button
               className="p-2 text-gray-600"
