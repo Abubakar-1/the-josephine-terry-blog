@@ -159,8 +159,8 @@ const AnimatedFooter = () => {
         {/* Copyright */}
         <div className="text-center text-gray-600">
           <p>
-            &copy; {new Date().getFullYear()} Josephine Terry Blog. All rights
-            reserved.
+            &copy; {new Date().getFullYear()} The Josephine Terry Blog. All
+            rights reserved.
           </p>
         </div>
       </div>
