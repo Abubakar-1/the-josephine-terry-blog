@@ -87,7 +87,9 @@ const AnimatedFooter = () => {
             >
               <Sparkles className="h-12 w-12 text-primary mb-4" />
             </motion.div>
-            <h3 className="text-2xl font-bold mb-2">Josephine Terry Blog</h3>
+            <h3 className="text-2xl font-bold mb-2">
+              The Josephine Terry Blog
+            </h3>
             <p className="text-gray-600 text-center md:text-left">
               Exploring the world of web development and beyond.
             </p>
